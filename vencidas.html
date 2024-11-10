@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Link para o Bootstrap 5 -->
+    <link href="styles.css" rel="stylesheet">
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">   
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-immune " style="background-color: #2c313c;">
+
+        <div class="container">
+            <a class="navbar-brand text-white" href="home.html"><img src="imune.jpg" width="100px" alt=""></a>
+            <button class="navbar-toggler border-color-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary"  href="home.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="vencidas.html">Vacinas Vencidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="pendentes.html">Vacinas a Vencer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Vencidas</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col"><input type="checkbox" id="pegar_todos"></th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Data do Primeiro Vencimento.</th>
+                    <th scope="col">Vacina</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Editar</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <div class="text-end">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input check2" type="checkbox" id="sms" value="sms">
+                <label class="form-check-label" for="sms">SMS</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input check2" type="checkbox" id="email" value="email">
+                <label class="form-check-label" for="email">E-mail</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input check2" type="checkbox" id="whatsapp" value="whatsapp">
+                <label class="form-check-label" for="whatsapp">WhatsApp</label>
+            </div>
+            
+            <button class="btn btn-success" disabled id="notificar">Notificar Selecionados</button>
+        </div>
+    </div>
+
+        <!-- Rodapé -->
+        <footer class="bg-immune text-white text-center py-3 mt-5" style="background-color: #2c313c;">
+            <p>&copy; 2024 Immunitech - Todos os direitos reservados.</p>
+        </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
